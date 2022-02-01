@@ -3,6 +3,7 @@ Basics of setting up ROS Workspace, creating packages and custom ROS topics, mes
 
 # Linux ROS commands:
 
+```
 Environment Setup:
 gedit ~/.bashrc  (open the bashrc file in the home directory(.bashrc is a file containing several script commands which is automatically executed when you run a terminal)
 source /opt/ros/noetic/setup.bash (You must add this setup.bash script in bashrc file to enable the default ros workspace)
@@ -109,12 +110,4 @@ $catkin_make
 $rosrun turtlesim turtlesim_node
 $rostopic list
 $rostopic info /turtle1/cmd_vel
-
-
-
-
-
-
-
-
-
+```
