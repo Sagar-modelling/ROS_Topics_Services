@@ -6,6 +6,11 @@ Basics of setting up ROS Workspace, creating packages and custom ROS topics, mes
 ```
 Environment Setup:
 
+To make python file executable while running in the Linux bash terminal:
+Prepend #! /usr/bin/python with your script.
+Run the following command in your terminal to make the script executable: chmod +x SCRIPTNAME.py
+Now, ​simply type ./SCRIPTNAME.py to run the executable script.
+
 gedit ~/.bashrc  (open the bashrc file in the home directory(.bashrc is a file containing several script commands which is automatically executed when you run a terminal)
 source /opt/ros/noetic/setup.bash (You must add this setup.bash script in bashrc file to enable the default ros workspace)
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc(automatically source above script in the bashrc file)
@@ -101,8 +106,3 @@ $more AddTwoInts.srv
 creating a server and client py files in python :
 $rosrun ros__tutorials add_server.py
 $osrun ros__tutorials add_client.py 5 8
-
-To make python file executable while running in the Linux bash terminal:
-Prepend #! /usr/bin/python with your script.
-Run the following command in your terminal to make the script executable: chmod +x SCRIPTNAME.py
-Now, ​simply type ./SCRIPTNAME.py to run the executable script.
